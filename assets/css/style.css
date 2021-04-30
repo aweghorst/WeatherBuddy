@@ -1,12 +1,27 @@
-*
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: bolder;
+}
+h3 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 .testbox {
@@ -14,10 +29,40 @@ h1, h2, h3 {
 }
 
 .header {
-  background-image: linear-gradient(to right, rgb(102, 137, 252), rgb(0, 0, 82));
+  background-image: linear-gradient(
+    to right,
+    rgb(102, 137, 252),
+    rgb(0, 0, 82)
+  );
   color: white;
   text-align: center;
-  font-size:14px;
+  font-size: 14px;
   padding: 10px 0px 5px 0px;
   margin-bottom: 20px;
+}
+
+.card-deck .card {
+  background-color: rgb(61, 83, 109);
+  color: white;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.card-body {
+  padding: 10px 0px 10px 5px;
+  line-height: 1;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#search-box {
+  border-bottom: 2px solid rgb(179, 175, 175);
 }
