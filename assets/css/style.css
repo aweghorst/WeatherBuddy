@@ -1,0 +1,23 @@
+*
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-weight: bolder;
+}
+
+.testbox {
+  border: 4px solid blue;
+}
+
+.header {
+  background-image: linear-gradient(to right, rgb(102, 137, 252), rgb(0, 0, 82));
+  color: white;
+  text-align: center;
+  font-size:14px;
+  padding: 10px 0px 5px 0px;
+  margin-bottom: 20px;
+}
