@@ -24,7 +24,7 @@
     <header class="header bg-dark">
       <h1>WeatherBuddy Dashboard</h1>
     </header>
-    <div class="row">
+    <div class="row px-3">
       <!--Left Pane-->
       <div class="col-sm-12 col-lg-3">
         <!-- Search Box-->
@@ -32,10 +32,10 @@
           <h2>Search for a City:</h2>
           <input class="form-control" placeholder="Austin" id="search-input"></input>
           <button type="submit" class="btn btn-primary col-12" id="search-btn">Search</button>
+          <button type="submit" class="btn btn-danger col-12" id="clear-city-names">Clear History</button>
         </div>
         <!--Search History-->
-        <div class="container" id="city-history">
-          
+        <div  id="search-history">
         </div>
       </div>
       <!--Right Pane-->
@@ -54,62 +54,7 @@
         <div>
           <h3>5-Day Forecast:</h3>
         </div>
-        <div class="card-deck">
-          <div class="card">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Today + 1</h4>
-                <i></i>
-                <p class="card-text">Temp: <span id="plus-one-temp"></span> &deg;F</p>
-                <p class="card-text">Wind: <span id="plus-one-wind"></span> MPH</p>
-                <p class="card-text">Humidity: <span id="plus-one-humidity"></span> %</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Today + 2</h4>
-                <i></i>
-                <p class="card-text">Temp: <span id="plus-two-temp"></span> &deg;F</p>
-                <p class="card-text">Wind: <span id="plus-two-wind"></span> MPH</p>
-                <p class="card-text">Humidity: <span id="plus-two-humidity"></span> %</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Today + 3</h4>
-                <i></i>
-                <p class="card-text">Temp: <span id="plus-three-temp"></span> &deg;F</p>
-                <p class="card-text">Wind: <span id="plus-three-wind"></span> MPH</p>
-                <p class="card-text">Humidity: <span id="plus-three-humidity"></span> %</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Today + 4</h4>
-                <i></i>
-                <p class="card-text">Temp: <span id="plus-four-temp"></span> &deg;F</p>
-                <p class="card-text">Wind: <span id="plus-four-wind"></span> MPH</p>
-                <p class="card-text">Humidity: <span id="plus-four-humidity"></span> %</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-body">
-              <div class="card-title">
-                <h4>Today + 5</h4>
-                <i></i>
-                <p class="card-text">Temp: <span id="plus-five-temp"></span> &deg;F</p>
-                <p class="card-text">Wind: <span id="plus-five-wind"></span> MPH</p>
-                <p class="card-text">Humidity: <span id="plus-five-humidity"></span> %</p>
-              </div>
-            </div>
-          </div>
+        <div class="card-deck" id="forecast">
         </div>
       </div>
     </div>
