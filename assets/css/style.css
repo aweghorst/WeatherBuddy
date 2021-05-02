@@ -70,46 +70,57 @@ h4 {
   line-height: 1.5;
   border-radius: 0.25rem;
   max-width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 14px 20px;
 }
 
 .city {
-  text-align: center;
-  background-color: rgb(179, 175, 175);
+  color: rgb(85, 85, 85);
+  background-color: rgb(255, 255, 255);
+  font-weight: 600;
 }
 
+.left-pane {
+  background-color: rgb(245, 245, 245);
+  padding-bottom: 20px;
+}
 .uv-low {
   background-color: green;
-  padding: 4px 30px;
+  padding: 5px 20px;
   text-align: center;
   color: white;
+  border-radius: 5px;
 }
 
 .uv-moderate {
   background-color: rgb(187, 187, 0);
-  padding: 4px 30px;
+  padding: 5px 20px;
   text-align: center;
   color: white;
+  border-radius: 5px;
 }
 
 .uv-high {
   background-color: rgb(179, 116, 1);
-  padding: 4px 30px;
+  padding: 5px 20px;
   text-align: center;
   color: white;
+  border-radius: 5px;
 }
 
 .uv-veryhigh {
   background-color: rgb(179, 0, 0);
-  padding: 4px 30px;
+  padding: 5px 20px;
   text-align: center;
   color: white;
+  border-radius: 5px;
 }
 
 .uv-extreme {
   background-color: rgb(161, 0, 161);
-  padding: 4px 30px;
+  padding: 5px 20px;
   text-align: center;
   color: white;
+  border-radius: 5px;
 }
