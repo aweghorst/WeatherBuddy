@@ -57,7 +57,7 @@ h4 {
 }
 
 .btn-danger {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 #search-box {
@@ -76,15 +76,15 @@ h4 {
 }
 
 .city {
-  color: rgb(165, 164, 164);
+  color: rgb(114, 114, 114);
   background-color: rgb(255, 255, 255);
   font-weight: lighter;
 }
 
 .left-pane {
-  background-color: rgb(245, 245, 245);
-  padding-bottom: 20px;
+  padding: 2px;
 }
+
 .uv-low {
   background-color: green;
   padding: 5px 20px;
