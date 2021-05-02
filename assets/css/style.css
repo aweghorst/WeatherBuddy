@@ -76,9 +76,9 @@ h4 {
 }
 
 .city {
-  color: rgb(85, 85, 85);
+  color: rgb(165, 164, 164);
   background-color: rgb(255, 255, 255);
-  font-weight: 600;
+  font-weight: lighter;
 }
 
 .left-pane {
