@@ -50,7 +50,7 @@ function getWeather(response) {
   let long = response.features[0].center[0];
   let lat = response.features[0].center[1];
   let foundName = response.features[0].text;
-  const APIKey = "166a433c57516f51dfab1f7edaed8413";
+  const APIKey = "add2b16241bd6f82cc25e92250e30478";
   let weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&units=imperial&exclude=minutely,hourly,alerts&appid=${APIKey}`;
 
   $.ajax({
@@ -83,9 +83,9 @@ function displayWeather(response, foundName) {
   function currentWeather() {
     let currentDate = moment().format("l");
     let currentIcon = response.current.weather[0].icon;
-    let currentTemp = response.current.temp;
+    let currentTemp = Math.round(response.current.temp * 10) / 10;
     let currentHumidity = response.current.humidity;
-    let currentWind = response.current.wind_speed;
+    let currentWind = Math.round(response.current.wind_speed * 10) / 10;
     let currentUV = response.current.uvi;
     let currentIconEl = $("<img>").attr(
       "src",
@@ -134,9 +134,9 @@ function displayWeather(response, foundName) {
       });
       //remaining variables
       let iconSource = response.daily[i].weather[0].icon;
-      let cardTemp = response.daily[i].temp.day;
+      let cardTemp = Math.round(response.daily[i].temp.day * 10) / 10;
       let cardHumidity = response.daily[i].humidity;
-      let cardWind = response.daily[i].wind_speed;
+      let cardWind = Math.round(response.daily[i].wind_speed * 10) / 10;
       //append to page
       let cardEl = $("<div>").attr("class", "card");
       let cardBodyEl = $("<div>").attr("class", "card-body five-card");
