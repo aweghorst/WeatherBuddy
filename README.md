@@ -11,6 +11,7 @@ This is an app designed to return the current weather and a 5 day forcast based 
 * jQuery
 * Bootstrap
 * moment.js
+* OpenWeatherMap API
 * MapBox Geocoding API
 
 ## Website
